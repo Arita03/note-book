@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Home</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+  crossorigin="anonymous"></script>
+
+        <script src="https://kit.fontawesome.com/02d7c981a5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body style="padding:0px; margin: 0px; height: 100vh;height: 100%;">
+        <div>
+            <nav class="navbar navbar-inverse"   >
+                <div class="container-fluid" style="background-color: rgb(95, 15, 170);">
+                  <div class="navbar-header" style="text-align: center;">
+                    <a class="navbar-brand" href="index.html">REMINDER</a>
+                  </div>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Logout</a></li>
+                  </ul>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-md-10 col-lg-10 col-md-offset-1">
+                    <div>
+                            <div class="panel " style="border:2px solid blueviolet; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.26);">
+                                <div class="panel-heading custom-color" style="text-align: center; font-size: 20px; color: white;">My Note</div>
+                                <div class="panel-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label class="reminder-lebel">Note Title</label>
+                                            <input type="text" name="title" placeholder="Title" value="Untitled" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="reminder-lebel">Short Description </label>
+                                            <input type="text" name="description" placeholder="Description " style="width: 200px;" >
+                                        </div>
+                                        <div class="form-group">
+                                            <div style="position: relative;">
+                                            <textarea class="textarea" id="textarea" name="message" rows="13" cols="140" style="width: cover;" placeholder="Write Your Note here"></textarea>
+
+                                            </div>
+                                        </div>
+                                        <div  style=" display:inline-flex; position: relative;">
+                                            <a href="notebookhome.html" style="background-color: rgb(226, 27, 12); color: white; padding: 10px 20px; float: left; margin-left: 30px; text-align: center;height:40;box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);" type="submit"> Back</a>
+                                            <p class="colour-palate" style="background: green;" id="green"></p>
+                                            <p class="colour-palate" style="background: red;" id="red"></p>
+                                            <p class="colour-palate" style="background: blue;" id="blue"></button>
+                                            <p class="colour-palate" style="background: rgb(255, 238, 0);" id="yellow"></p>
+                                            <p class="colour-palate" style="background: purple;" id="purple"></p>
+                                            <p class="colour-palate" style="background: black;" id="black"></p>
+                                            <p class="colour-palate" style="background: rgb(51, 255, 0);" id="light-green"></p>
+                                            <p class="colour-palate" style="background: rgb(255, 0, 200);" id="pink"></p>
+                                            <p class="note-btn" id="clear">Clear All</p>
+                                            <p class="note-btn" style="font-weight: bold;" id="bold">Bold</p>
+                                            <p class="note-btn" style="font-style: italic;" id="italic">Italic</p>
+                                            <a href="notebookhome.html" style="background-color: rgb(6, 190, 6); color: white; padding: 10px 30;float: right; margin: 0 30px 0 20; height:40;box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);" type="submit">Save</a>
+                                        </div>
+                                   </form> 
+                                </div>
+                              </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    
+        $("#green").click(function(){
+            document.getElementById("textarea").style.color = "green"
+        })
+        $("#red").click(function(){
+            document.getElementById("textarea").style.color = "red"
+        })
+        $("#blue").click(function(){
+            document.getElementById("textarea").style.color = "blue"
+        })
+        $("#yellow").click(function(){
+            document.getElementById("textarea").style.color = "#ffee00"
+        })
+        $("#purple").click(function(){
+            document.getElementById("textarea").style.color = "purple"
+        })
+        $("#black").click(function(){
+            document.getElementById("textarea").style.color = "black"
+        })
+        $("#light-green").click(function(){
+            document.getElementById("textarea").style.color = "#33ff00"
+        })
+        $("#pink").click(function(){
+            document.getElementById("textarea").style.color = "#ff00c8"
+        })
+        $("#clear").click(function(){
+            document.getElementById("textarea").value=""
+        })
+        $("#bold").click(function(){
+            document.getElementById("textarea").style.fontWeight = "900";
+        })
+        $("#italic").click(function(){
+            document.getElementById("textarea").style.fontStyle = "italic";
+        })
+    
+</script>
