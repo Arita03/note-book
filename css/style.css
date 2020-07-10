@@ -26,8 +26,8 @@ html,body,div{
 }
 .sing-panel-body{
     margin-top: 10%;
-    height: 80%;
-    padding: 0%;
+    height: auto;
+    padding: 20px;
     border: 2px solid blueviolet;
     box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.377);
 }
