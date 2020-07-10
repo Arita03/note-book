@@ -25,9 +25,9 @@ html,body,div{
     text-align: center;
 }
 .sing-panel-body{
-    margin-top: 10%;
-    height: auto;
-    padding: 20px;
+    margin-top: 5%;
+    height: 90%;
+    padding: 0;
     border: 2px solid blueviolet;
     box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.377);
 }
